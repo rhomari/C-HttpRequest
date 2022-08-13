@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "http.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
