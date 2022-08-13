@@ -6,7 +6,7 @@
 #include <time.h>
 #include <ctype.h>
 HINTERNET CreateSession();
-HINTERNET OpenRequest(HINTERNET hSession, char *szVerb, char *szObjectName, char *szVersion, char *szReferrer, char *szAcceptTypes, DWORD dwFlags, DWORD_PTR dwContext);
+
 int main(){
     DWORD dwSize = 0;
     DWORD TotalSize = 0;
