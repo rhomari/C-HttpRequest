@@ -47,7 +47,6 @@ int main(){
            break;
         
         fwrite(buffer, 1, dwDownloaded, file);
-        buffer = NULL;
         free(buffer);
     }while(dwSize > 0);
     end = clock();
