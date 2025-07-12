@@ -46,8 +46,9 @@ int main(){
         if (!WinHttpReadData(hRequest, (LPVOID)buffer, dwSize, &dwDownloaded))
            break;
         
-        fprintf(file, "%s", buffer);
+        fwrite(buffer, 1, dwDownloaded, file);
         buffer = NULL;
+        free(buffer);
     }while(dwSize > 0);
     end = clock();
     fclose(file);
